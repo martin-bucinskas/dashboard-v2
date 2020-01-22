@@ -19,7 +19,7 @@ const options = {
   json: true,
 };
 
-export const interval = '*/10 * * * *';
+export const interval = '*/1 * * * *';
 export const perform = async () => {
   const response = await request(options);
   // eslint-disable-next-line max-len
