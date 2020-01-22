@@ -12,7 +12,8 @@ body {
   font-size: 2vw;
   color: white;
   font-family: 'Saira', sans-serif;
-  background-color: #222;
+  background: #1b2a49;
+  //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(237,102,99,1) 71%, rgba(255,163,114,1) 100%);
   box-sizing: border-box;
 }
 
@@ -41,11 +42,25 @@ p {
   text-align: center;
   padding: 1.25rem;
   color: #333;
-  background-color: #12b0c5;
+  background: #465881;
+  //background: linear-gradient(
+  //                to left,
+  //                #46588100 0%,
+  //                #465881FF 30%,
+  //                #465881FF 70%,
+  //                #46588100 100%
+  //);
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
 .widget--medium {
-  grid-column: span 2;
+   grid-column: span 2;
+ }
+
+.widget--large {
+  grid-column: span 3;
 }
 
 .widget__title {
@@ -71,4 +86,9 @@ p {
   font-size: 0.8rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-reminders-value {
+  font-size: 1.4rem;
+  color: #fff;
 }

@@ -4,21 +4,23 @@ import ReactDOM from 'react-dom';
 import '../styles/default.scss';
 
 import Dashboard from '../widgets/dashboard';
-import NumberWidget from '../widgets/number/widget';
-import PingWidget from '../widgets/ping/widget';
-import BuildStatusWidget from '../widgets/build-status/widget';
-import SparklineWidget from '../widgets/sparkline/widget';
-import ProgressWidget from '../widgets/progress/widget';
+import RemindersWidget from '../widgets/reminders/widget';
+import WeatherWidget from '../widgets/weather/widget';
+import LondonUndergroundWidget from '../widgets/london-underground/widget';
+import WifiWidget from '../widgets/wifi/widget';
+import TeamNewsWidget from '../widgets/team-news/widget';
+import OverheardWidget from '../widgets/overheard/widget';
+// import Gallery from '../widgets/gallery/widget';
 
 ReactDOM.render(
-  <Dashboard>
-    <SparklineWidget name="DemoUsers" title="Users" format="0.00a" />
-    <PingWidget name="GooglePing" title="API" />
-    <NumberWidget name="ReasonPRs" title="Pull Requests" />
-    <BuildStatusWidget name="DemoMaster" title="Build - Master" size="medium" />
-    <ProgressWidget name="DemoProgress" title="Sales Target" />
-    <NumberWidget name="DemoConversion" title="Conversion" metric="%" format="0.0a" />
-    <BuildStatusWidget name="DemoDevelop" title="Build - Develop" size="medium" />
+  <Dashboard name="Dashboard">
+    <RemindersWidget name="Reminders" title="Reminders" size="medium" />
+    <OverheardWidget name="Overheard" size="medium" />
+    <WeatherWidget name="WeatherWidget" />
+    <LondonUndergroundWidget name="LondonUnderground" size="medium" />
+    <WifiWidget name="WiFi" />
+    {/*<Gallery name="Gallery" size="medium" />*/}
+    <TeamNewsWidget name="TeamNews" size="medium" />
   </Dashboard>,
   document.getElementById('content'),
 );
