@@ -15,7 +15,7 @@ function shuffle(a) {
   return a;
 }
 
-export const interval = '*/1 * * * *';
+export const interval = '*/30 * * * *';
 export const perform = async () => {
   const overheard = [];
   await gsheets.getAllOverheard().then(response => {

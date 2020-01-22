@@ -14,7 +14,7 @@ const options = {
   json: true,
 };
 
-export const interval = '*/1 * * * *';
+export const interval = '*/15 * * * *';
 export const perform = async () => {
   const response = await request(options);
   let rainFlag = true;

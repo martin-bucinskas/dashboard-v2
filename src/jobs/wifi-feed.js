@@ -1,6 +1,6 @@
 const gsheets = require('../../middleware/google/gsheets');
 
-export const interval = '*/1 * * * *';
+export const interval = '*/30 * * * *';
 export const perform = async () => {
   let wifiPassword = '';
   await gsheets.getLatestWifiPassword().then(response => {
