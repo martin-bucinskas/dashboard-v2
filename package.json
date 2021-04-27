@@ -53,7 +53,7 @@
     "react-sparklines": "^1.7.0",
     "react-text-rotator": "^0.0.6",
     "readline": "^1.3.0",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5",
     "require-all": "^2.2.0",
