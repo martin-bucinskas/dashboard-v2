@@ -78,7 +78,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "ignore-styles": "^5.0.1",
-    "jsdom": "^11.10.0",
+    "jsdom": "^16.5.0",
     "mock-socket": "^7.1.0",
     "proxyquire": "^2.0.1",
     "sinon": "^5.0.6",
